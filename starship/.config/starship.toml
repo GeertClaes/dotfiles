@@ -12,6 +12,7 @@ $git_status\
 [](fg:green bg:teal)\
 $c\
 $rust\
+$ruby\
 $golang\
 $nodejs\
 $php\
@@ -21,9 +22,6 @@ $haskell\
 $python\
 [](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
-$time\
-[ ](fg:purple)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -111,6 +109,7 @@ truncation_symbol = "…/"
 "Music" = "󰝚 "
 "Pictures" = " "
 "Developer" = "󰲋 "
+"Work" = "󰲋 "
 
 [git_branch]
 symbol = ""
@@ -133,6 +132,11 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [rust]
 symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+
+[ruby]
+symbol = "◆"
 style = "bg:teal"
 format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
