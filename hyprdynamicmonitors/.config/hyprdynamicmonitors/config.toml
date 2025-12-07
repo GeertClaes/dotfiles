@@ -1,0 +1,34 @@
+[general]
+destination = "$HOME/.config/hypr/monitors.conf"
+
+[power_events]
+
+[power_events.dbus_query_object]
+path = "/org/freedesktop/UPower/devices/line_power_AC"
+
+[[power_events.dbus_signal_match_rules]]
+object_path = "/org/freedesktop/UPower/devices/line_power_AC"
+
+
+[profiles.widescreen]
+config_file = "/home/gcl/.config/hyprdynamicmonitors/hyprconfigs/widescreen.go.tmpl"
+config_file_type = "template"
+[profiles.Widescreen.conditions]
+
+[[profiles.Widescreen.conditions.required_monitors]]
+description = "LG Display 0x0521"
+monitor_tag = "monitor0"
+
+[[profiles.Widescreen.conditions.required_monitors]]
+description = "LG Electronics LG HDR WQHD 103NTYTBX442"
+monitor_tag = "monitor1"
+
+
+[profiles.laptop]
+config_file = "/home/gcl/.config/hyprdynamicmonitors/hyprconfigs/laptop.go.tmpl"
+config_file_type = "template"
+[profiles.laptop.conditions]
+
+[[profiles.laptop.conditions.required_monitors]]
+description = "LG Display 0x0521"
+monitor_tag = "monitor0"
